@@ -60,7 +60,7 @@
             <div class="container"> 
 
             <h1 class="hero-section-title">Effective Solutions for Your Business</h1>
-            <button class="hero-section-button" type="button" data-modal-open>Order Service</button>
+            <button class="button-primary" type="button" data-modal-open>Order Service</button>
             
             </div>   
 
@@ -549,46 +549,53 @@
             
             </button>
 
-            <h2>Leave your contacts and we will call you back</h2>
+            <h2 class="modal-title">Leave your contacts and we will call you back</h2>
             
-            <form class="form-input" name="contact-form">
+            <form name="contact-form">
 
-                <div>
+                <div class="modal-field">
 
-                    <label for="user-name">Name</label>
-                    <input id="user-name" type="text" name="user-name">
+                    <label class="modal-label" for="user-name">Name</label>
 
-                </div>
+                    <div class="modal-input-wrap">
+                        <svg class="modal-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person-black"></use>
+                        </svg>
 
-                <div>   
-
-                    <label for="user-phone">Phone</label>
-                    <input id="user-phone" type="tel" name="user-phone">
-
-                </div>
-
-                <div>
-
-                    <label for="user-email">Email</label>
-                    <input id="user-email" type="email" name="user-email">
+                        <input class="modal-input" id="user-name" type="text" name="user-name">
+                    </div>
 
                 </div>
 
-                <div>
+                <div class="modal-field">   
 
-                    <label for="user-comment">Comment</label>
-                    <textarea name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+                    <label class="modal-label" for="user-phone">Phone</label>
+                    <input class="modal-input" id="user-phone" type="tel" name="user-phone">
+
+                </div>
+
+                <div class="modal-field">
+
+                    <label class="modal-label" for="user-email">Email</label>
+                    <input class="modal-input" id="user-email" type="email" name="user-email">
+
+                </div>
+
+                <div class="modal-field">
+
+                    <label class="modal-label" for="user-comment">Comment</label>
+                    <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
                 
                 </div>
 
-                <div>
+                <div class="modal-field">
 
-                    <input id="privacy-policy" type="checkbox" name="privacy-policy">
-                    <label for="privacy-policy">I accept the terms and conditions of the Privacy Policy</label>
+                    <input class="modal-input" id="privacy-policy" type="checkbox" name="privacy-policy">
+                    <label class="modal-label" for="privacy-policy">I accept the terms and conditions of the Privacy Policy</label>
 
                 </div>
 
-                <button type="submit" class="send-button">Send</button>
+                <button type="submit" class="button-primary">Send</button>
                 
             </form>
 
