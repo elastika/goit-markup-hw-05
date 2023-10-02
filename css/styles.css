@@ -535,5 +535,65 @@ fill: var(--c-background-light);
 /*Modal*/
 
 .backdrop {
-    background-color: ;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(46, 47, 66, 0.40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    border-radius: 4px;
+    background: #FCFCFC;
+    width: 408px;
+    padding: 72px 24px 24px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c-cornflower);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: var(--c-brand-pressed);
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close-button-icon {
+fill: var(--c-background-dark);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover .close-button-icon,
+.modal-close:focus .close-button-icon {
+    fill: var(--c-background-white);
 }
