@@ -572,7 +572,7 @@
             
             </button>
 
-            <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
             
             <form name="contact-form">
 
@@ -631,23 +631,24 @@
 
                 <div class="modal-checkbox">
 
-                    <input class="modal-checkbox-input visually-hidden" id="privacy-policy" type="checkbox" name="privacy-policy">
-                    <span class="modal-checkbox-check">
-
-                        <svg class="modal-checkbox-icon" width="16" height="16">
-                        
-                            <use href="./images/icons.svg#icon-click"> </use>
-
-                        </svg>
-                
-
-                    </span>
+                    <input class="modal-checkbox-input visually-hidden" id="user-privacy" type="checkbox" name="user-privacy" value="true">
                     
-                    <label class="modal-checkbox-label" for="privacy-policy">I accept the terms and conditions of the <a class="privacy-policy-link" href="#">Privacy Policy</a></label>
+                    <label class="modal-checkbox-label" for="user-privacy">I accept the terms and conditions of the <a class="privacy-policy-link" href="#">Privacy Policy</a>
+                    
+                        <span class="modal-checkbox-check">
+
+                            <svg class="modal-checkbox-icon" width="16" height="16">
+
+                                <use href="./images/icons.svg#icon-click"> </use>
+
+                            </svg>
+                        </span>
+
+                    </label>
 
                 </div>
 
-                <button type="submit" class="button-primary">Send</button>
+                <button type="submit" class="modal-button-primary">Send</button>
                 
             </form>
 
