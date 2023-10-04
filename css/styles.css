@@ -554,28 +554,29 @@ fill: var(--c-background-light);
 
 .subscribe-input {
     width: 264px;
+    height: 40px;
     border: 1px solid var(--c-background-white);
-    background-color: var(--c-background-dark);
+    background-color: transparent;
     border-radius: 4px;
     padding: 8px 16px;
     color: var(--c-background-white);
     font-size: 12px;
-    font-weight: 400;
-    line-height: 2.0;
-    letter-spacing: 0.02em;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .subscribe-input::placeholder {
 
     color: var(--c-background-white);
     font-size: 12px;
-    font-weight: 400;
-    line-height: 2.0;
-    letter-spacing: 0.02em;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .button-subsrcibe {
     min-width: 165px;
+    height: 40px;
     background-color: var(--c-brand);
     color: var(--c-background-white);
     font-size: 16px;
@@ -586,15 +587,15 @@ fill: var(--c-background-light);
     padding: 8px 24px;
     border-radius: 4px;
     border-style: none;
-}
-
-.button-subsrcibe-wrap {
     display: flex;
-    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
 }
 
 .button-subsrcibe-icon {
-    fill: var(--c-background-white)
+    margin-left: 16px;
+    fill: var(--c-background-white);
 }
 
 /*Modal*/
