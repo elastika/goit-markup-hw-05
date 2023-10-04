@@ -667,11 +667,14 @@ fill: var(--c-background-light);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
 }
 
 .modal-close:hover .close-button-icon,
 .modal-close:focus .close-button-icon {
     fill: var(--c-background-white);
+    background-color: var(--c-brand);
+    border: none;
 }
 
 .modal-title {
