@@ -655,8 +655,7 @@ fill: var(--c-background-light);
     padding: 0;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close:hover, .modal-close:focus {
     background-color: var(--c-brand);
     border: none;
 }
@@ -667,14 +666,11 @@ fill: var(--c-background-light);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
 }
 
-.modal-close:hover .close-button-icon,
-.modal-close:focus .close-button-icon {
+.modal-close:hover + .close-button-icon,
+.modal-close:focus + .close-button-icon {
     fill: var(--c-background-white);
-    background-color: var(--c-brand);
-    border: none;
 }
 
 .modal-title {
@@ -810,9 +806,6 @@ fill: var(--c-background-light);
     border: none;
     background-color: var(--c-brand-pressed);
     fill: #FFF;
-}
-.modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
-    opacity: 1;
 }
 
 .modal-button-primary {
