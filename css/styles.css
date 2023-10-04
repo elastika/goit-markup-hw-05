@@ -656,7 +656,7 @@ fill: var(--c-background-light);
 }
 
 .modal-close:hover, .modal-close:focus {
-    background-color: var(--c-brand);
+    background-color: #404bbf;
     border: none;
 }
 
@@ -670,7 +670,7 @@ fill: var(--c-background-light);
 
 .modal-close:hover + .close-button-icon,
 .modal-close:focus + .close-button-icon {
-    fill: var(--c-background-white);
+    fill: #ffffff;
 }
 
 .modal-title {
