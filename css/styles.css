@@ -789,7 +789,7 @@ fill: var(--c-background-light);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
+    fill: transparent;
     width: 16px;
     height: 16px;
     border: 1px solid var(--c--navy-blue-modal);
@@ -800,13 +800,13 @@ fill: var(--c-background-light);
 }
 
 .modal-checkbox-icon {
-    fill: var(--c-background-light);
+    fill: #FFF;
 }
 
 .modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-check {
     border: none;
     background-color: var(--c-brand-pressed);
-    fill: var(--c-background-light);
+    fill: #FFF;
 }
 .modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
     opacity: 1;
