@@ -657,7 +657,7 @@ fill: var(--c-background-light);
 
 .modal-close:hover,
 .modal-close:focus {
-    background-color: var(--c-brand-pressed);
+    background-color: #404bbf;
     border: none;
 }
 
