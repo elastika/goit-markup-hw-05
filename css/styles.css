@@ -820,7 +820,7 @@ fill: var(--c-background-light);
 .modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-check {
     border: none;
     background-color: var(--c-brand-pressed);
-    fill: #FFF;
+    fill: var(--c-background-light);
 }
 
 .modal-button-primary {
